@@ -1,0 +1,15 @@
+[package]
+name = "corecycler-gui"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+iced = { version = "0.13", features = ["tokio"] }
+tokio = { version = "1", features = ["process", "io-util", "sync", "rt-multi-thread", "time", "fs"] }
+sysinfo = "0.33"
+regex = "1"
+once_cell = "1"
+
+[profile.release]
+opt-level = 2
+lto = "thin"
