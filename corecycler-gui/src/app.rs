@@ -302,9 +302,13 @@ impl App {
                 }
             }
             Message::StopTest => {
-                if let Some(ref mut handle) = self.runner_handle {
-                    handle.stop();
-                    self.status_text = "Stopping...".to_string();
+                if let Some(mut handle) = self.runner_handle.take() {
+                    handle.kill();
+                    let elapsed = self.elapsed_str();
+                    self.is_running = false;
+                    self.status_text = format!("Stopped {} after {}", self.running_program, elapsed);
+                    self.output_rx = None;
+                    self.started_at = None;
                 }
             }
             Message::Tick => {
