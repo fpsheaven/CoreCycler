@@ -16,16 +16,25 @@ CoreCycler is a CPU stability testing tool for PBO & Curve Optimizer on AMD Ryze
 
 *(coming soon)*
 
-## Quick Start
+## Quick Start (Download)
 
-1. Clone this fork (or download a release)
-2. Make sure you have [Rust](https://rustup.rs/) installed
-3. Build and run:
+1. Download the latest **CoreCycler-GUI.exe** from [Releases](https://github.com/fpsheaven/CoreCycler/releases)
+2. Place it in your CoreCycler root directory (next to `script-corecycler.ps1`)
+3. Run it — no Rust or extra runtime needed, it's a self-contained executable
+
+> Don't have CoreCycler yet? Download it from [sp00n's repo](https://github.com/sp00n/CoreCycler), or just clone this fork which includes both the script and the GUI.
+
+## Building From Source
+
+If you want to build it yourself:
+
+1. Install [Rust](https://rustup.rs/)
+2. Build:
    ```bash
    cd corecycler-gui
    cargo build --release
    ```
-4. Place the built binary in the CoreCycler root directory (next to `script-corecycler.ps1`), or run from the `corecycler-gui` folder
+3. The binary will be at `corecycler-gui/target/release/corecycler-gui.exe`
 
 ## How It Works
 
