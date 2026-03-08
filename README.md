@@ -14,7 +14,11 @@ CoreCycler is a CPU stability testing tool for PBO & Curve Optimizer on AMD Ryze
 
 ## Screenshot
 
-*(coming soon)*
+<img width="1396" height="829" alt="{003DFBA1-7906-483D-8900-925D28B2FEF4}" src="https://github.com/user-attachments/assets/da9adec5-a706-4d76-bc6d-1d1b5f216681" />
+<img width="1402" height="830" alt="{D1505282-A237-4B84-BCD3-DADF8F969FA3}" src="https://github.com/user-attachments/assets/435bc833-21e9-4542-a5b3-f60003ea0f27" />
+
+
+
 
 ## Quick Start (Download)
 
